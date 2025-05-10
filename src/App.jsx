@@ -1,10 +1,10 @@
 import './App.css'
-import Timer from './components/features/Timer'
+import Card from './components/ui/Card';
 
 function App() {
   return (
   <>
-    <Timer/>
+    <Card/>
   </>
   );
 }

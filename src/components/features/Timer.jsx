@@ -6,6 +6,7 @@ function Timer() {
 
     console.log("Minutes:", minutes, "Seconds:", seconds);
 
+    return <p>{minutes}:{seconds}</p>
 }
 
 export default Timer;
