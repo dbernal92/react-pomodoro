@@ -7,7 +7,10 @@ function Timer() {
     const minutes = Math.floor(userTime / 60);
     const seconds = userTime % 60;
 
-    console.log("Minutes:", minutes, "Seconds:", seconds);
+    const paddedSeconds = seconds < 10 ? `0${seconds}` : seconds;
+
+
+    console.log("Minutes:", minutes, "Seconds:", paddedSeconds);
 
 
     return (
@@ -19,7 +22,7 @@ function Timer() {
             <Button onClick={() => setTimeLeft(userTime * 60)}>
                 Start Timer
                 </Button>
-            <p>{minutes}:{seconds}</p>
+            <p>{minutes}:{paddedSeconds}</p>
         </>
     );
 }
