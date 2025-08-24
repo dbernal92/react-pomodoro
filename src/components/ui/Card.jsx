@@ -1,4 +1,4 @@
-import Timer from "../features/Timer"
+import Timer from "../features/TimerInput"
 
 function Card() {
     return (

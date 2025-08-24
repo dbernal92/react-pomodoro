@@ -1,7 +1,7 @@
-function Button({ onClick, children }) {
+function Button({ onClick, label }) {
     return (
         <button onClick={onClick}>
-            {children}
+            {label}
             </button>
     )
 }
